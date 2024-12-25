@@ -1,0 +1,38 @@
+const fs = require('fs');
+const path = require('path');
+
+// Define the expected critical bot file content (this can be a string or hash of the file's contents)
+const expectedFileContent = 'Expected content or hash of Phistarbots.js';
+
+// Path to the file to check
+const filePath = path.join(__dirname, 'Phistarbots.js');
+
+// Function to check the integrity of the Phistarbots.js file
+async function checkAntiClone() {
+  // Check if the file exists
+  if (fs.existsSync(filePath)) {
+    // Read the content of the file
+    const fileContent = fs.readFileSync(filePath, 'utf-8');
+
+    // Check if the content of the file matches the expected content
+    if (fileContent !== expectedFileContent) {
+      // If content doesn't match, throw an error and spam the console
+      console.error('Corner Idiot, do you think you can clone me? Anti-clone detected');
+
+      // Keep spamming the message in the console
+      setInterval(() => {
+        console.error('Corner Idiot, do you think you can clone me? Anti-clone detected');
+      }, 1000); // Spam every second
+    } else {
+      console.log('Integrity check passed: Phistarbots.js is secure.');
+    }
+  } else {
+    // If the file doesn't exist, throw an error and spam the console
+    console.error('Corner Idiot, do you think you can clone me? Anti-clone detected');
+    setInterval(() => {
+      console.error('Corner Idiot, do you think you can clone me? Anti-clone detected');
+    }, 1000); // Spam every second
+  }
+}
+
+checkAntiClone();
