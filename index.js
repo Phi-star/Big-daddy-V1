@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 });
 
 // Route to serve 'index.css'
-app.get('/index.css', (req, res) => {
+app.get('/style.css', (req, res) => {
   fs.readFile(path.join(__dirname, 'index.css'), 'utf8', (err, data) => {
     if (err) {
       console.error('Error reading index.css:', err);
