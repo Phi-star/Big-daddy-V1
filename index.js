@@ -5,6 +5,12 @@ const app = express();
 // Define the port
 const port = process.env.PORT || 3000;
 
+// Middleware to log requests for static files
+app.use((req, res, next) => {
+  console.log(`Request for: ${req.url}`); // Log the requested file (e.g., /index.html or /index.css)
+  next();
+});
+
 // Serve static files from the current directory
 app.use(express.static(__dirname)); // Serves index.html, index.css, etc.
 
@@ -20,4 +26,4 @@ app.get('*', (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
-
+  
