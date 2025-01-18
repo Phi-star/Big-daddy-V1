@@ -1,0 +1,201 @@
+/* styles.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.header {
+  background-color: #ff8500;
+  padding: 10px 20px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  height: 50px;
+}
+
+.header .menu-button {
+  font-size: 24px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.main-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.donation-form {
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.donation-type-buttons, .donation-amount-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.donation-type, .donation-amount {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.donation-type {
+  background-color: #ff8500;
+}
+
+.donation-amount {
+  background-color: #333;
+}
+
+.donation-amount:hover {
+  background-color: #ff8500;
+}
+
+.other-amount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.other-amount input {
+  width: 60px;
+  margin-left: 5px;
+  font-size: 14px;
+  padding: 5px;
+  text-align: center;
+}
+
+.dedicate-donation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.checkbox-input {
+  margin-right: 10px;
+}
+
+.checkbox-label {
+  font-size: 14px;
+  color: #333;
+}
+
+.billing-info {
+  margin-top: 20px;
+}
+
+.sub-title {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.donate-now-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ff8500;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.donate-now-btn:hover {
+  background-color: #333;
+}
+
+.recaptcha {
+  margin-top: 30px;
+  color: gray;
+  font-size: 14px;
+  text-align: center;
+}
+
+.billing-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.info-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
