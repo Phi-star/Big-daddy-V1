@@ -4,13 +4,12 @@ const app = express();
 
 // Define the port and domain
 const port = process.env.PORT || 3000;
-const domain = process.env.DOMAIN || 'http://kidnohurger'; // Default to localhost if DOMAIN is not set
 
 // Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Log the domain when the server starts
-console.log(`Website will be deployed at ${domain}:${port}`);
+console.log(`Website is deployed at port ${port}`);
 
 // For any route, send the 'index.html' file
 app.get('*', (req, res) => {
@@ -19,5 +18,5 @@ app.get('*', (req, res) => {
 
 // Start the server
 app.listen(port, () => {
-  console.log(`Server is running on ${domain}:${port}`);
+  console.log(`Server is running on http://localhost:${port}`);
 });
