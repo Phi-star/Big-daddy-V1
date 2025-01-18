@@ -1,1 +1,15 @@
+{
+  "name": "my-website",
+  "version": "1.0.0",
+  "description": "My Simple Website",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
 
