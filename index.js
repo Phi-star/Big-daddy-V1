@@ -13,7 +13,7 @@ console.log(`Website is deployed at port ${port}`);
 
 // For any route, send the 'index.html' file
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname,'index.html'));
 });
 
 // Start the server
