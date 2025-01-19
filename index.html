@@ -21,133 +21,98 @@
         Today, <strong class="highlight">1 in 5 kids</strong> is at risk of hunger in America. <strong class="highlight">But you can help.</strong> Your gift today can connect vulnerable kids in communities around the country with the nutritious food they need to grow and thrive.
       </p>
       <p class="description">
-        A <strong class="highlight yellow">$50 gift</strong> can help provide up to <strong class="highlight yellow">500 meals</strong> for a child who is struggling with an empty belly and demoralizing hunger pangs. Your gift today can make a big difference for kids facing hunger.
+        A <strong class="highlight orange">$50 gift</strong> can help provide up to <strong class="highlight orange">500 meals</strong> for a child who is struggling with an empty belly and demoralizing hunger pangs. Your gift today can make a big difference for kids facing hunger.
       </p>
+    </section>
 
     <!-- Billing Information -->
-<section class="billing-info">
-  <h2 class="sub-title">Billing Information</h2>
-  <div class="form-row">
-    <input type="text" placeholder="FIRST NAME*" class="form-input" id="first-name" required>
-    <input type="text" placeholder="LAST NAME*" class="form-input" id="last-name" required>
-  </div>
-  <div class="form-row">
-    <input type="text" placeholder="BILLING STREET" class="form-input" id="billing-street">
-    <input type="text" placeholder="BILLING STREET (optional)" class="form-input" id="billing-street2">
-  </div>
-  <div class="form-row">
-    <input type="text" placeholder="CITY*" class="form-input" id="city">
-    <input type="text" placeholder="STATE*" class="form-input" id="state">
-  </div>
-  <div class="form-row">
-    <input type="text" placeholder="ZIP" class="form-input" id="zip">
-    <select class="form-input" id="country" required>
-      <option value="" disabled selected>COUNTRY*</option>
-      <option value="US">United States</option>
-      <option value="CA">Canada</option>
-      <option value="GB">United Kingdom</option>
-      <option value="AU">Australia</option>
-      <option value="IN">India</option>
-      <option value="DE">Germany</option>
-      <option value="FR">France</option>
-      <!-- Add other countries as needed -->
-    </select>
-  </div>
-  <div class="form-row">
-    <input type="email" placeholder="EMAIL*" class="form-input" id="email" required>
-    <input type="tel" placeholder="PHONE*" class="form-input" id="phone" required>
-  </div>
-
-  <!-- Reason for Donation (Optional) -->
-  <div class="form-row">
-    <button type="button" class="form-input large-textarea" id="reason-for-donation" onclick="document.getElementById('reason-text').focus()">REASON FOR DONATION (Optional)</button>
-    <textarea id="reason-text" class="form-input" placeholder="Please share your reason for donating (optional)" rows="5"></textarea>
-  </div>
-</section>
-
-      <!-- Dedicate Donation -->
-      <div class="dedicate-donation">
-        <input type="checkbox" id="dedicate" class="checkbox-input">
-        <label for="dedicate" class="checkbox-label">Dedicate my donation</label>
+    <section class="billing-info">
+      <h2 class="sub-title">Billing Information</h2>
+      <div class="form-row">
+        <input type="text" placeholder="FIRST NAME*" class="form-input" id="first-name" required>
+        <input type="text" placeholder="LAST NAME*" class="form-input" id="last-name" required>
       </div>
-
-      <!-- Billing Information -->
-      <section class="billing-info">
-        <h2 class="sub-title">Billing Information</h2>
-        <div class="form-row">
-          <input type="text" placeholder="FIRST NAME*" class="form-input" id="first-name">
-          <input type="text" placeholder="LAST NAME*" class="form-input" id="last-name">
-        </div>
-        <div class="form-row">
-          <input type="text" placeholder="BILLING STREET*" class="form-input" id="billing-street">
-          <input type="text" placeholder="BILLING STREET*" class="form-input" id="billing-street2">
-        </div>
-        <div class="form-row">
-          <input type="text" placeholder="CITY*" class="form-input" id="city">
-          <select class="form-input" id="state">
-            <option value="" disabled selected>STATE*</option>
-            <option value="AL">Alabama</option>
-            <option value="CA">California</option>
-            <option value="NY">New York</option>
-          </select>
-        </div>
-        <div class="form-row">
-          <input type="text" placeholder="ZIP*" class="form-input" id="zip">
-          <select class="form-input" id="country">
-            <option value="" disabled selected>UNITED STATES</option>
-            <option value="US">United States</option>
-            <option value="CA">Canada</option>
-          </select>
-        </div>
-        <div class="form-row">
-          <input type="email" placeholder="EMAIL*" class="form-input" id="email">
-          <input type="tel" placeholder="PHONE" class="form-input" id="phone">
-        </div>
-      </section>
-
-      <div class="checkbox-row">
-        <input type="checkbox" id="communication" class="checkbox-input">
-        <label for="communication" class="checkbox-label">
-          Yes, I would like to receive communication from Share our Strength.
-        </label>
+      <div class="form-row">
+        <input type="text" placeholder="BILLING STREET*" class="form-input" id="billing-street" required>
+        <input type="text" placeholder="BILLING STREET (optional)" class="form-input" id="billing-street2">
       </div>
-      <p class="info-text">
-        By providing my mobile phone number, I opt-in to receive text messages and phone calls from No Kid Hungry regarding its life-saving work. Text STOP to opt out, HELP for help. Message & data rates may apply.
-      </p>
+      <div class="form-row">
+        <input type="text" placeholder="CITY*" class="form-input" id="city" required>
+        <input type="text" placeholder="STATE*" class="form-input" id="state" required>
+      </div>
+      <div class="form-row">
+        <input type="text" placeholder="ZIP*" class="form-input" id="zip" required>
+        <select class="form-input" id="country" required>
+          <option value="" disabled selected>COUNTRY*</option>
+          <option value="US">United States</option>
+          <option value="CA">Canada</option>
+          <option value="GB">United Kingdom</option>
+          <option value="AU">Australia</option>
+          <option value="IN">India</option>
+          <option value="DE">Germany</option>
+          <option value="FR">France</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <input type="email" placeholder="EMAIL*" class="form-input" id="email" required>
+        <input type="tel" placeholder="PHONE*" class="form-input" id="phone" required>
+      </div>
+      <div class="form-row">
+        <textarea id="reason-text" class="form-input" placeholder="Please share your reason for donating (optional)" rows="5"></textarea>
+      </div>
+    </section>
 
-      <!-- Donate Now Button -->
-      <a id="donate-now-btn" href="#" class="donate-now-btn">DONATE NOW</a>
-    </main>
-   <!-- Link to the external script.js -->
+    <!-- Dedicate Donation -->
+    <div class="dedicate-donation">
+      <input type="checkbox" id="dedicate" class="checkbox-input">
+      <label for="dedicate" class="checkbox-label">Dedicate my donation</label>
+    </div>
+
+    <!-- Communication Checkbox -->
+    <div class="checkbox-row">
+      <input type="checkbox" id="communication" class="checkbox-input">
+      <label for="communication" class="checkbox-label">
+        Yes, I would like to receive communication from Share our Strength.
+      </label>
+    </div>
+    <p class="info-text">
+      By providing my mobile phone number, I opt-in to receive text messages and phone calls from No Kid Hungry regarding its life-saving work. Text STOP to opt out, HELP for help. Message & data rates may apply.
+    </p>
+
+    <!-- Donate Now Button -->
+    <a id="donate-now-btn" href="#" class="donate-now-btn">DONATE NOW</a>
+  </main>
+
+  <!-- Additional Information Section -->
+  <section class="content">
+    <p>
+      No Kid Hungry is a campaign of Share Our Strength, a 501(c)(3) nonprofit organization that believes all children
+      and families deserve to live free from hunger and poverty. Your gift will be used to help support Share Our
+      Strength’s comprehensive strategies and initiatives to end childhood hunger.
+    </p>
+    <p>
+      Your donations help support programs that feed kids; No Kid Hungry does not provide individual meals. Learn more
+      at <a href="https://NoKidHungry.org/OneDollar">NoKidHungry.org/OneDollar</a>. All donations are tax-deductible to
+      the fullest extent of the law. Federal identification number: 52-1367538.
+    </p>
+    <p>
+      If you prefer to donate by mail, please send checks to:
+      <br>
+      Share Our Strength | No Kid Hungry PO Box 715475 Philadelphia, PA 19171-5475
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      &copy; 2023 Share Our Strength | 1030 15th Street, NW, Suite 1100 W, Washington, DC 20005 | 
+      <a href="tel:8009694767">(800) 969-4767</a> | 
+      <a href="privacy-policy.html">Privacy Policy</a> | 
+      <a href="about.html">About SSL Certificates</a>
+    </p>
+  </footer>
+
+  <!-- Link to the external script.js -->
   <script src="script.js"></script>
-
-</body>
-    </section>
-    <section class="content">
-      <p>
-        No Kid Hungry is a campaign of Share Our Strength, a 501(c)(3) nonprofit organization that believes all children
-        and families deserve to live free from hunger and poverty. Your gift will be used to help support Share Our
-        Strength’s comprehensive strategies and initiatives to end childhood hunger.
-      </p>
-      <p>
-        Your donations help support programs that feed kids; No Kid Hungry does not provide individual meals. Learn more
-        at <a href="https://NoKidHungry.org/OneDollar">NoKidHungry.org/OneDollar</a>. All donations are tax-deductible to
-        the fullest extent of the law. Federal identification number: 52-1367538.
-      </p>
-      <p>
-        If you prefer to donate by mail, please send checks to:
-        <br>
-        Share Our Strength | No Kid Hungry PO Box 715475 Philadelphia, PA 19171-5475
-      </p>
-    </section>
-    <footer>
-      <p>
-        &copy; 2023 Share Our Strength | 1030 15th Street, NW, Suite 1100 W, Washington, DC 20005 | 
-        <a href="tel:8009694767">(800) 969-4767</a> | 
-        <a href="privacy-policy.html">Privacy Policy</a> | 
-        <a href="about.html">About SSL Certificates</a>
-      </p>
-    </footer>
-  </div>
 </body>
 </html>
