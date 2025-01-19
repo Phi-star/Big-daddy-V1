@@ -1,27 +1,3 @@
-
-  document.querySelectorAll('.donation-type').forEach(button => {
-    button.addEventListener('click', function() {
-      document.querySelectorAll('.donation-type').forEach(btn => btn.classList.remove('active'));
-      this.classList.add('active');
-    });
-  });
-
-  // Update donation link dynamically based on the selected amount
-  function updateDonateNowLink(url) {
-    window.location.href = url; // You can change this to redirect to the correct URL
-  }
-
-  // Initial animation effect for the amounts
-  window.onload = function() {
-    setTimeout(() => {
-      document.getElementById('amount-35').style.opacity = 1;
-      document.getElementById('amount-50').style.opacity = 1;
-      document.getElementById('amount-100').style.opacity = 1;
-      document.getElementById('amount-230').style.opacity = 1;
-    }, 500);
-  }
-
-
 let donationAmount = null;
 
     // Handle donation type selection (One-time, Monthly, Annually)
@@ -34,20 +10,30 @@ let donationAmount = null;
         this.classList.add('active');
         
         // Show donation amount options after a selection
-        document.getElementById('amount-buttons').style.display = 'block';
+        document.getElementById('amount-buttons').style.opacity = 1; // Show with animation
       });
     });
 
     // Set donation amount when a user selects an amount button
     function setDonationAmount(amount) {
       donationAmount = amount;
+
+      // Highlight the selected button
+      document.querySelectorAll('.donation-amount').forEach(btn => {
+        btn.classList.remove('selected');
+      });
+      document.querySelector(`#amount-${amount}`).classList.add('selected');
+
+      // Update the Donate Now button's link with the selected amount
       document.getElementById('donate-now-btn').setAttribute('href', `https://example.com/${amount}`);
     }
 
-    // Show the selected amount in the donate now button
-    document.getElementById('donate-now-btn').addEventListener('click', function(e) {
-      if (!donationAmount) {
-        e.preventDefault(); // Prevent default action if no amount is selected
-        alert('Please select a donation amount first!');
-      }
-    });
+    // Initial animation effect for the amounts
+    window.onload = function() {
+      setTimeout(() => {
+        document.querySelectorAll('.donation-amount').forEach(btn => {
+          btn.style.transition = 'opacity 1s ease-in-out';
+          btn.style.opacity = 1; // Make them fade in after page load
+        });
+      }, 500);
+          }
