@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>No Kid Hungry</title>
-  <link rel="stylesheet" href="style.css">
-<body>
-  <script src="script.js"></script> 
-</body>
+  <link rel="stylesheet" href="styles.css">
 </head>
+<body>
+
+  <!-- Header Section -->
   <header class="header">
     <div class="container">
       <img src="logo-placeholder.png" alt="No Kid Hungry Logo" class="logo">
@@ -16,6 +16,7 @@
     </div>
   </header>
 
+  <!-- Main Content -->
   <main class="main-content">
     <section class="donation-section">
       <h1 class="title">Donate Today</h1>
@@ -25,68 +26,70 @@
       <p class="description">
         A <strong class="highlight yellow">$50 gift</strong> can help provide up to <strong class="highlight yellow">500 meals</strong> for a child who is struggling with an empty belly and demoralizing hunger pangs. Your gift today can make a big difference for kids facing hunger.
       </p>
-        
-  <main class="donation-form">
-    <h1 class="title">Donate Today</h1>
-
-    <!-- Donation Type Buttons -->
-    <div class="donation-type-buttons">
-      <button class="donation-type" id="one-time-btn">ONE TIME</button>
-      <button class="donation-type" id="monthly-btn">MONTHLY</button>
-      <button class="donation-type" id="annually-btn">ANNUALLY</button>
-    </div>
-
-    <!-- Donation Amount Buttons -->
-    <div class="donation-amount-buttons">
-      <button class="donation-amount amount" id="amount-35" onclick="updateDonateNowLink('https://example.com/35')">$35</button>
-      <button class="donation-amount amount" id="amount-50" onclick="updateDonateNowLink('https://example.com/50')">$50</button>
-      <button class="donation-amount amount" id="amount-100" onclick="updateDonateNowLink('https://example.com/100')">$100</button>
-      <button class="donation-amount amount" id="amount-230" onclick="updateDonateNowLink('https://example.com/230')">$230</button>
-      <button class="donation-amount other-amount">
-        OTHER: $<input type="number" id="custom-amount" placeholder="0" min="1" onchange="updateDonateNowLink('https://example.com/other?amount=' + this.value)">
-      </button>
-    </div>
-
-    <!-- Dedicate Donation -->
-    <div class="dedicate-donation">
-      <input type="checkbox" id="dedicate" class="checkbox-input">
-      <label for="dedicate" class="checkbox-label">Dedicate my donation</label>
-    </div>
-
-    <!-- Billing Information -->
-    <section class="billing-info">
-      <h2 class="sub-title">Billing Information</h2>
-      <div class="form-row">
-        <input type="text" placeholder="FIRST NAME*" class="form-input">
-        <input type="text" placeholder="LAST NAME*" class="form-input">
-      </div>
-      <div class="form-row">
-        <input type="text" placeholder="BILLING STREET*" class="form-input">
-        <input type="text" placeholder="BILLING STREET*" class="form-input">
-      </div>
-      <div class="form-row">
-        <input type="text" placeholder="CITY*" class="form-input">
-        <select class="form-input">
-          <option value="" disabled selected>STATE*</option>
-          <option value="AL">Alabama</option>
-          <option value="CA">California</option>
-          <option value="NY">New York</option>
-        </select>
-      </div>
-      <div class="form-row">
-        <input type="text" placeholder="ZIP*" class="form-input">
-        <select class="form-input">
-          <option value="" disabled selected>UNITED STATES</option>
-          <option value="US">United States</option>
-          <option value="CA">Canada</option>
-        </select>
-      </div>
-      <div class="form-row">
-        <input type="email" placeholder="EMAIL*" class="form-input">
-        <input type="tel" placeholder="PHONE" class="form-input">
-      </div>
     </section>
- 
+
+    <section class="donation-form">
+      <h1 class="title">Donate Today</h1>
+
+      <!-- Donation Type Buttons -->
+      <div class="donation-type-buttons">
+        <button class="donation-type" id="one-time-btn">ONE TIME</button>
+        <button class="donation-type" id="monthly-btn">MONTHLY</button>
+        <button class="donation-type" id="annually-btn">ANNUALLY</button>
+      </div>
+
+      <!-- Donation Amount Buttons -->
+      <div class="donation-amount-buttons">
+        <button class="donation-amount amount" id="amount-35" onclick="updateDonateNowLink('https://example.com/35')">$35</button>
+        <button class="donation-amount amount" id="amount-50" onclick="updateDonateNowLink('https://example.com/50')">$50</button>
+        <button class="donation-amount amount" id="amount-100" onclick="updateDonateNowLink('https://example.com/100')">$100</button>
+        <button class="donation-amount amount" id="amount-230" onclick="updateDonateNowLink('https://example.com/230')">$230</button>
+        <button class="donation-amount other-amount">
+          OTHER: $<input type="number" id="custom-amount" placeholder="0" min="1" onchange="updateDonateNowLink('https://example.com/other?amount=' + this.value)">
+        </button>
+      </div>
+
+      <!-- Dedicate Donation -->
+      <div class="dedicate-donation">
+        <input type="checkbox" id="dedicate" class="checkbox-input">
+        <label for="dedicate" class="checkbox-label">Dedicate my donation</label>
+      </div>
+
+      <!-- Billing Information -->
+      <section class="billing-info">
+        <h2 class="sub-title">Billing Information</h2>
+        <div class="form-row">
+          <input type="text" placeholder="FIRST NAME*" class="form-input">
+          <input type="text" placeholder="LAST NAME*" class="form-input">
+        </div>
+        <div class="form-row">
+          <input type="text" placeholder="BILLING STREET*" class="form-input">
+          <input type="text" placeholder="BILLING STREET*" class="form-input">
+        </div>
+        <div class="form-row">
+          <input type="text" placeholder="CITY*" class="form-input">
+          <select class="form-input">
+            <option value="" disabled selected>STATE*</option>
+            <option value="AL">Alabama</option>
+            <option value="CA">California</option>
+            <option value="NY">New York</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <input type="text" placeholder="ZIP*" class="form-input">
+          <select class="form-input">
+            <option value="" disabled selected>UNITED STATES</option>
+            <option value="US">United States</option>
+            <option value="CA">Canada</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <input type="email" placeholder="EMAIL*" class="form-input">
+          <input type="tel" placeholder="PHONE" class="form-input">
+        </div>
+      </section>
+
+      <!-- Communication Consent -->
       <div class="checkbox-row">
         <input type="checkbox" id="communication" class="checkbox-input">
         <label for="communication" class="checkbox-label">
@@ -96,10 +99,15 @@
       <p class="info-text">
         By providing my mobile phone number, I opt-in to receive text messages and phone calls from No Kid Hungry regarding its life-saving work. Text STOP to opt out, HELP for help. Message & data rates may apply.
       </p>
-    </form>
- <!-- Donate Now Button -->
-    <a id="donate-now-btn" href="#" class="donate-now-btn">DONATE NOW</a>
+
+      <!-- Donate Now Button -->
+      <a id="donate-now-btn" href="#" class="donate-now-btn">DONATE NOW</a>
+    </section>
   </main>
+
+  <!-- Link to the external script.js -->
+  <script src="script.js"></script>
+
 </body>
-  </html>
-    
+        </html>
+                    
