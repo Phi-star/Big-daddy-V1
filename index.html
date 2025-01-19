@@ -52,38 +52,46 @@
       </div>
 
       <!-- Billing Information -->
-      <section class="billing-info">
-        <h2 class="sub-title">Billing Information</h2>
-        <div class="form-row">
-          <input type="text" placeholder="FIRST NAME*" class="form-input" id="first-name">
-          <input type="text" placeholder="LAST NAME*" class="form-input" id="last-name">
-        </div>
-        <div class="form-row">
-          <input type="text" placeholder="BILLING STREET*" class="form-input" id="billing-street">
-          <input type="text" placeholder="BILLING STREET*" class="form-input" id="billing-street2">
-        </div>
-        <div class="form-row">
-          <input type="text" placeholder="CITY*" class="form-input" id="city">
-          <select class="form-input" id="state">
-            <option value="" disabled selected>STATE*</option>
-            <option value="AL">Alabama</option>
-            <option value="CA">California</option>
-            <option value="NY">New York</option>
-          </select>
-        </div>
-        <div class="form-row">
-          <input type="text" placeholder="ZIP*" class="form-input" id="zip">
-          <select class="form-input" id="country">
-            <option value="" disabled selected>UNITED STATES</option>
-            <option value="US">United States</option>
-            <option value="CA">Canada</option>
-          </select>
-        </div>
-        <div class="form-row">
-          <input type="email" placeholder="EMAIL*" class="form-input" id="email">
-          <input type="tel" placeholder="PHONE" class="form-input" id="phone">
-        </div>
-      </section>
+<section class="billing-info">
+  <h2 class="sub-title">Billing Information</h2>
+  <div class="form-row">
+    <input type="text" placeholder="FIRST NAME*" class="form-input" id="first-name" required>
+    <input type="text" placeholder="LAST NAME*" class="form-input" id="last-name" required>
+  </div>
+  <div class="form-row">
+    <input type="text" placeholder="BILLING STREET" class="form-input" id="billing-street">
+    <input type="text" placeholder="BILLING STREET (optional)" class="form-input" id="billing-street2">
+  </div>
+  <div class="form-row">
+    <input type="text" placeholder="CITY*" class="form-input" id="city">
+    <input type="text" placeholder="STATE*" class="form-input" id="state">
+  </div>
+  <div class="form-row">
+    <input type="text" placeholder="ZIP" class="form-input" id="zip">
+    <select class="form-input" id="country" required>
+      <option value="" disabled selected>COUNTRY*</option>
+      <option value="US">United States</option>
+      <option value="CA">Canada</option>
+      <option value="GB">United Kingdom</option>
+      <option value="AU">Australia</option>
+      <option value="IN">India</option>
+      <option value="DE">Germany</option>
+      <option value="FR">France</option>
+      <!-- Add other countries as needed -->
+    </select>
+  </div>
+  <div class="form-row">
+    <input type="email" placeholder="EMAIL*" class="form-input" id="email" required>
+    <input type="tel" placeholder="PHONE*" class="form-input" id="phone" required>
+  </div>
+
+  <!-- Reason for Donation (Optional) -->
+  <div class="form-row">
+    <button type="button" class="form-input large-textarea" id="reason-for-donation" onclick="document.getElementById('reason-text').focus()">REASON FOR DONATION (Optional)</button>
+    <textarea id="reason-text" class="form-input" placeholder="Please share your reason for donating (optional)" rows="5"></textarea>
+  </div>
+</section>
+
 
       <div class="checkbox-row">
         <input type="checkbox" id="communication" class="checkbox-input">
