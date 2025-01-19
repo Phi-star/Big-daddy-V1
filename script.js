@@ -10,13 +10,24 @@ let donationAmount = null;
         this.classList.add('active');
         
         // Show donation amount options after a selection
-        document.getElementById('amount-buttons').style.display = 'block';
+        document.getElementById('amount-buttons').style.display = 'flex';
       });
     });
 
     // Set donation amount when a user selects an amount button
     function setDonationAmount(amount) {
       donationAmount = amount;
+
+      // Highlight the selected button
+      document.querySelectorAll('.donation-amount').forEach(btn => {
+        btn.classList.remove('selected');
+      });
+
+      // Add the 'selected' class to the clicked button
+      const selectedButton = document.querySelector(`#amount-${amount}`);
+      selectedButton.classList.add('selected');
+
+      // Update the "Donate Now" button link with the selected amount
       document.getElementById('donate-now-btn').setAttribute('href', `https://example.com/${amount}`);
     }
 
@@ -27,4 +38,3 @@ let donationAmount = null;
         alert('Please select a donation amount first!');
       }
     });
-            
