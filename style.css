@@ -257,3 +257,28 @@ body {
   line-height: 1.5;
 }
 
+.content p {
+  margin: 15px 0;
+  text-align: left;
+}
+
+.content a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+footer p {
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+footer a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+  
