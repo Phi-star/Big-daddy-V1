@@ -22,7 +22,7 @@ function setDonationAmount(amount) {
   donationAmount = amount;
 
   // Dynamically update the Donate Now button URL
-  document.getElementById('donate-now-btn').dataset.url = `https://example.com/${amount}`;
+  document.getElementById('donate-now-btn').dataset.url = `https://${amount}`;
 }
 
 // Validate form and handle Donate Now button click
