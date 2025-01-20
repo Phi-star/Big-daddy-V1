@@ -119,6 +119,7 @@ body {
   font-size: 14px;
   padding: 5px;
   text-align: center;
+}
 
 /* Billing Info Section */
 .billing-info {
@@ -225,16 +226,6 @@ button:active {
   }
 }
 
-
-.checkbox-input {
-  margin-right: 10px;
-}
-
-.checkbox-label {
-  font-size: 14px;
-  color: #333;
-}
-
 .info-text {
   margin-top: 20px;
   font-size: 14px;
@@ -262,8 +253,7 @@ button:active {
   background-color: #333;
 }
 
-/* content */
-
+/* Content */
 .content p {
   margin: 15px 0; 
 }
@@ -279,8 +269,7 @@ button:active {
 }
 
 .content br {
-  margin-bottom: 10px
-; 
+  margin-bottom: 10px; 
 }
 
 /* Footer */
@@ -326,4 +315,4 @@ footer a:hover {
 #amount-50 { animation-delay: 4.7s; }
 #amount-100 { animation-delay: 5.8s; }
 #amount-230 { animation-delay: 6.9s; }
-    
+  
