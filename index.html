@@ -31,22 +31,26 @@
   <h1 class="title">Donate Today</h1>
 
   <!-- Donation Type Buttons -->
-  <div class="donation-type-buttons">
-    <button class="donation-type" id="one-time-btn">ONE TIME</button>
-    <button class="donation-type" id="monthly-btn">MONTHLY</button>
-    <button class="donation-type" id="annually-btn">ANNUALLY</button>
-  </div>
+<div class="donation-type-buttons">
+  <button class="donation-type" id="one-time-btn">ONE TIME</button>
+  <button class="donation-type" id="monthly-btn">MONTHLY</button>
+  <button class="donation-type" id="annually-btn">ANNUALLY</button>
+</div>
 
-  <!-- Donation Amount Buttons -->
-  <div class="donation-amount-buttons" id="amount-buttons">
-    <button class="donation-amount amount" onclick="setDonationLink('18333l')">$35</button>
-    <button class="donation-amount amount" onclick="setDonationLink('996d73')">$50</button>
-    <button class="donation-amount amount" onclick="setDonationLink('27q610')">$100</button>
-    <button class="donation-amount amount" onclick="setDonationLink('ij78ph')">$230</button>
-    <button class="donation-amount other-amount">
-      OTHER: $<input type="number" id="custom-amount" placeholder="0" min="1" onchange="setDonationLink('custom')">
-    </button>
-  </div>
+<!-- Donation Amount Buttons -->
+<div class="donation-amount-buttons" id="amount-buttons">
+  <button class="donation-amount amount" id="amount-35" onclick="setDonationAmount('18333l')">$35</button>
+  <button class="donation-amount amount" id="amount-50" onclick="setDonationAmount('996d73')">$50</button>
+  <button class="donation-amount amount" id="amount-100" onclick="setDonationAmount('27q610')">$100</button>
+  <button class="donation-amount amount" id="amount-230" onclick="setDonationAmount('ij78ph')">$230</button>
+  <button class="donation-amount other-amount">
+    OTHER: $<input type="number" id="custom-amount" placeholder="0" min="1" onchange="setDonationAmount('custom')">
+  </button>
+</div>
+
+<!-- Donate Now Button -->
+<button id="donate-now-btn">Donate Now</button>
+
 
     <!-- Billing Information -->
     <section class="billing-info">
