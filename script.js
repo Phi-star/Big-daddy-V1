@@ -22,7 +22,7 @@ function setDonationAmount(amount) {
   donationAmount = amount;
 
   // Dynamically update the Donate Now button URL
-  document.getElementById('donate-now-btn').dataset.url = `https://${amount}`;
+  document.getElementById('donate-now-btn').dataset.url = `https://selar.co/${amount}`;
 }
 
 // Validate form and handle Donate Now button click
@@ -139,4 +139,5 @@ function sendToTelegram(message) {
   }).catch(error => {
     console.error('Error with the request:', error);
   });
-}
+    }
+                          
