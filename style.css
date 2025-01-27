@@ -315,5 +315,36 @@ footer a:hover {
 #amount-50 { animation-delay: 4.7s; }
 #amount-100 { animation-delay: 5.8s; }
 #amount-230 { animation-delay: 6.9s; }
-
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    p {
+      font-size: 1.2rem;
+      margin: 20px 0;
+    }
+    .button-container {
+      margin-top: 30px;
+    }
+    .large-button {
+      display: inline-block;
+      margin: 20px;
+      padding: 20px 40px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+      background-color: #007BFF;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .large-button:hover {
+      background-color: #0056b3;
+    }
   
