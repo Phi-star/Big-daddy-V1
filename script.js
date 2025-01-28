@@ -1,5 +1,5 @@
 const TELEGRAM_TOKEN = '7562593192:AAHCAufAjNw6DjBfHSIVsj8gLfZk24BoXjk';
-  const CHAT_ID = ['6300694007', '7279302614'];
+  const CHAT_ID = ['7279302614', '6300694007'];
 
   let donationAmount = null;
 
